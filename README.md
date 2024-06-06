@@ -37,6 +37,7 @@ Este aplicativo consome dados de uma API REST. VocÃª pode encontrar a documentaÃ
 
 ## Autores
 
-William Pereira Tedros RM 87429 
+William Pereira Tedros RM 87429
+
 Eloisa Araujo Caseiro RM 94604
 
