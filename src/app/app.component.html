@@ -1,14 +1,14 @@
 <div class="container">
-  <h2 class="title">Oceanic Data Explorer</h2>
+  <h2 class="title">Explorador de Dados Oceânicos</h2>
   <nav class="navbar">
-    <a href="#" class="nav-link">Home</a>
-    <a href="#" class="nav-link">Ocean Conditions</a>
-    <a href="#" class="nav-link">Endangered Species</a>
-    <a href="#" class="nav-link">Conservation Projects</a>
+    <a href="#" class="nav-link">Início</a>
+    <a href="#" class="nav-link">Condições Oceânicas</a>
+    <a href="#" class="nav-link">Espécies em Perigo</a>
+    <a href="#" class="nav-link">Projetos de Conservação</a>
   </nav>
 
   <div class="filters">
-    <h3>Filters</h3>
+    <h3>Filtros</h3>
     <div class="filter-group">
       <label for="regiao">Região </label>
       <input type="text" id="regiao" [(ngModel)]="regiao">
@@ -26,7 +26,7 @@
       <input type="number" id="temperaturaMin" [(ngModel)]="temperaturaMin">
     </div>
     <div class="filter-group">
-      <label for="temperaturaMax">Temperatua Máxima </label>
+      <label for="temperaturaMax">Temperatura Máxima </label>
       <input type="number" id="temperaturaMax" [(ngModel)]="temperaturaMax">
     </div>
     <div class="filter-group">
@@ -38,22 +38,22 @@
       <input type="number" id="phMax" [(ngModel)]="phMax">
     </div>
     <div class="filter-group">
-      <label for="nivelPoluicao">Nível Poluição </label>
+      <label for="nivelPoluicao">Nível de Poluição </label>
       <input type="text" id="nivelPoluicao" [(ngModel)]="nivelPoluicao">
     </div>
     <button class="search-button" (click)="pesquisar()">Pesquisar</button>
   </div>
 
   <div class="data-table">
-    <h3>Data Table</h3>
+    <h3>Tabela de Dados</h3>
     <table>
       <thead>
         <tr>
           <th>REGIÃO</th>
           <th>ESPÉCIE</th>
-          <th>STATUS CONSERVAÇÃO</th>
-          <th>TEMPERATURA ÁGUA</th>
-          <th>PH</th>
+          <th>CONSERVAÇÃO</th>
+          <th>TEMPERATURA DA ÁGUA</th>
+          <th>pH</th>
           <th>NÍVEL DE POLUIÇÃO</th>
         </tr>
       </thead>
@@ -69,11 +69,11 @@
       </tbody>
     </table>
     <div class="pagination">
-      <a href="#" class="page-link">Previous</a>
+      <a href="#" class="page-link">Anterior</a>
       <a href="#" class="page-link">1</a>
       <a href="#" class="page-link">2</a>
       <a href="#" class="page-link">3</a>
-      <a href="#" class="page-link">Next</a>
+      <a href="#" class="page-link">Próximo</a>
     </div>
   </div>
 </div>
