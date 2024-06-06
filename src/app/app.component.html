@@ -1,64 +1,79 @@
-<input type="" [(ngModel)]="regiao">
+<div class="container">
+  <h2 class="title">Oceanic Data Explorer</h2>
+  <nav class="navbar">
+    <a href="#" class="nav-link">Home</a>
+    <a href="#" class="nav-link">Ocean Conditions</a>
+    <a href="#" class="nav-link">Endangered Species</a>
+    <a href="#" class="nav-link">Conservation Projects</a>
+  </nav>
 
-<input type="" [(ngModel)]="especie">
+  <div class="filters">
+    <h3>Filters</h3>
+    <div class="filter-group">
+      <label for="regiao">Região </label>
+      <input type="text" id="regiao" [(ngModel)]="regiao">
+    </div>
+    <div class="filter-group">
+      <label for="especie">Espécie </label>
+      <input type="text" id="especie" [(ngModel)]="especie">
+    </div>
+    <div class="filter-group">
+      <label for="statusConservacao">Status de Conservação </label>
+      <input type="text" id="statusConservacao" [(ngModel)]="statusConservacao">
+    </div>
+    <div class="filter-group">
+      <label for="temperaturaMin">Temperatura Mínima </label>
+      <input type="number" id="temperaturaMin" [(ngModel)]="temperaturaMin">
+    </div>
+    <div class="filter-group">
+      <label for="temperaturaMax">Temperatua Máxima </label>
+      <input type="number" id="temperaturaMax" [(ngModel)]="temperaturaMax">
+    </div>
+    <div class="filter-group">
+      <label for="phMin">PH Mínimo </label>
+      <input type="number" id="phMin" [(ngModel)]="phMin">
+    </div>
+    <div class="filter-group">
+      <label for="phMax">PH Máximo </label>
+      <input type="number" id="phMax" [(ngModel)]="phMax">
+    </div>
+    <div class="filter-group">
+      <label for="nivelPoluicao">Nível Poluição </label>
+      <input type="text" id="nivelPoluicao" [(ngModel)]="nivelPoluicao">
+    </div>
+    <button class="search-button" (click)="pesquisar()">Pesquisar</button>
+  </div>
 
-<input type="" [(ngModel)]="statusConservacao">
-
-<input type="" [(ngModel)]="temperaturaMin">
-
-<input type="" [(ngModel)]="temperaturaMax">
-
-<input type="" [(ngModel)]="phMin">
-
-<input type="" [(ngModel)]="phMax">
-
-<input type="" [(ngModel)]="nivelPoluicao">
-
-<button (click)="pesquisar()"></button>
-
-
-<table>
-  <thead>
-    <tr>
-      <th>REGIÃO</th>
-      <th>ESPÉCIE</th>
-      <th>STATUS CONSERVAÇÃO</th>
-      <th>TEMPERATURA MÍNIMA</th>
-      <th>TEMPERATURA MÁXIMA</th>
-      <th>PH MÍNIMO</th>
-      <th>PH MÁXIMO</th>
-      <th>NÍVEL DE POLUIÇÃO</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let item of dados">
-      <td>
-        {{item.regiao}}
-      </td>
-      <td>
-        {{item.especie}}
-      </td>
-      <td>
-        {{item.statusConservacao}}
-      </td>
-      <td>
-        {{item.temperaturaMin}}
-      </td>
-      <td>
-        {{item.temperaturaMax}}
-      </td>
-      <td>
-        {{item.phMin}}
-      </td>
-      <td>
-        {{item.phMax}}
-      </td>
-      <td>
-        {{item.nivelPoluicao}}
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-
-
+  <div class="data-table">
+    <h3>Data Table</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>REGIÃO</th>
+          <th>ESPÉCIE</th>
+          <th>STATUS CONSERVAÇÃO</th>
+          <th>TEMPERATURA ÁGUA</th>
+          <th>PH</th>
+          <th>NÍVEL DE POLUIÇÃO</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of dados">
+          <td>{{item.regiao}}</td>
+          <td>{{printEspecies(item.especies)}}</td>
+          <td>{{printConservacao(item.projetosConservacao)}}</td>
+          <td>{{item.temperaturaAgua}}</td>
+          <td>{{item.pH}}</td>
+          <td>{{item.nivelPoluicao}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagination">
+      <a href="#" class="page-link">Previous</a>
+      <a href="#" class="page-link">1</a>
+      <a href="#" class="page-link">2</a>
+      <a href="#" class="page-link">3</a>
+      <a href="#" class="page-link">Next</a>
+    </div>
+  </div>
+</div>

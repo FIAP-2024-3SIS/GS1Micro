@@ -1,1 +1,95 @@
-
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .nav-link {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007BFF;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  .filters {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .filter-group {
+    margin-bottom: 10px;
+  }
+  
+  .filter-group label {
+    display: inline-block;
+    width: 150px;
+  }
+  
+  .filter-group input {
+    width: calc(100% - 160px);
+  }
+  
+  .search-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .data-table {
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .data-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .data-table th, .data-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .pagination {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .page-link {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #007BFF;
+  }
+  
+  .page-link:hover {
+    text-decoration: underline;
+  }
+  
