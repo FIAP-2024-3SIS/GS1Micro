@@ -1,0 +1,64 @@
+<input type="" [(ngModel)]="regiao">
+
+<input type="" [(ngModel)]="especie">
+
+<input type="" [(ngModel)]="statusConservacao">
+
+<input type="" [(ngModel)]="temperaturaMin">
+
+<input type="" [(ngModel)]="temperaturaMax">
+
+<input type="" [(ngModel)]="phMin">
+
+<input type="" [(ngModel)]="phMax">
+
+<input type="" [(ngModel)]="nivelPoluicao">
+
+<button (click)="pesquisar()"></button>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>REGIÃO</th>
+      <th>ESPÉCIE</th>
+      <th>STATUS CONSERVAÇÃO</th>
+      <th>TEMPERATURA MÍNIMA</th>
+      <th>TEMPERATURA MÁXIMA</th>
+      <th>PH MÍNIMO</th>
+      <th>PH MÁXIMO</th>
+      <th>NÍVEL DE POLUIÇÃO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of dados">
+      <td>
+        {{item.regiao}}
+      </td>
+      <td>
+        {{item.especie}}
+      </td>
+      <td>
+        {{item.statusConservacao}}
+      </td>
+      <td>
+        {{item.temperaturaMin}}
+      </td>
+      <td>
+        {{item.temperaturaMax}}
+      </td>
+      <td>
+        {{item.phMin}}
+      </td>
+      <td>
+        {{item.phMax}}
+      </td>
+      <td>
+        {{item.nivelPoluicao}}
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
