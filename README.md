@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Oceanic Data Explorer
 
 Este é um aplicativo de interface de usuário em Angular que consome uma API REST fornecendo dados sobre as condições oceânicas, espécies ameaçadas e projetos de conservação.
@@ -41,9 +40,3 @@ Este aplicativo consome dados de uma API REST. Você pode encontrar a documenta�
 William Pereira Tedros RM 87429 
 Eloisa Araujo Caseiro RM 94604
 
-=======
-William Pereira Tedros RM 87429 
-Eloisa Araujo Caseiro RM 94604
-
-![Alt text](print.png)
->>>>>>> 3025f62e59c8d86c83a26edfc4727233ce2dcd0d
